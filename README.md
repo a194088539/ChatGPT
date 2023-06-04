@@ -1,37 +1,16 @@
-# ChatGPT
+注: 本程序源码仅限个人或公司学习或自用，可以商用，但请勿用于非法用途。
+如需完整商业版请联系QQ194088539
 
-#### 介绍
-ai-robot
+服务器环境: centos7/8 + php8.1 + mysql5.7 + redis + (nginx)
 
-#### 软件架构
-软件架构说明
+开发工具: idea + php8.1
 
+ChatGPT Ai机器人 商业程序, 自带支付宝,微信,银联收款接口，自带阿里云OSS接口，系统成熟无bug，可用于运营。
 
-#### 安装教程
+chatgpt官方账户可到淘宝去买，把密钥填入后台即可开箱即用。需要完整版请联系QQ:194088539
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+系统演示:
 
-#### 使用说明
+      用户端   http://42.51.40.103:58081/              用户名: test@test.com      密码: test998998
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+      管理端   http://42.51.40.103:58080/admin    用户名: admin                   密码: admin888
