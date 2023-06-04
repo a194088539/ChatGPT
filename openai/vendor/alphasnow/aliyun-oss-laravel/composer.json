@@ -1,0 +1,55 @@
+{
+    "name": "alphasnow/aliyun-oss-laravel",
+    "description": "alibaba cloud object storage service for laravel",
+    "keywords": ["aliyun", "oss", "laravel", "filesystems", "storage"],
+    "homepage": "https://alphasnow.github.io/aliyun-oss-laravel/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "alphasnow",
+            "email": "wind91@foxmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0.2",
+        "alphasnow/aliyun-oss-flysystem": "^3.3"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.5",
+        "phpunit/phpunit": "^9.5",
+        "friendsofphp/php-cs-fixer": "^3.12",
+        "phpstan/phpstan": "^1.9",
+        "orchestra/testbench": "^7.13",
+        "php-coveralls/php-coveralls": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "AlphaSnow\\LaravelFilesystem\\Aliyun\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AlphaSnow\\LaravelFilesystem\\Aliyun\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AlphaSnow\\LaravelFilesystem\\Aliyun\\AliyunServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "phpstan": "vendor/bin/phpstan analyse",
+        "check-style": "vendor/bin/php-cs-fixer fix --using-cache=no --diff --config=.php-cs-fixer.php --dry-run --ansi",
+        "fix-style": "vendor/bin/php-cs-fixer fix --using-cache=no --config=.php-cs-fixer.php --ansi",
+        "test": "vendor/bin/phpunit --colors=always --testdox --configuration phpunit.xml.dist",
+        "coveralls":  "vendor/bin/php-coveralls"
+    },
+    "scripts-descriptions": {
+        "phpstan": "Run static analysis",
+        "check-style": "Run style checks (only dry run - no fixing!).",
+        "fix-style": "Run style checks and fix violations.",
+        "test": "Run all tests."
+    }
+}

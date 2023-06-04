@@ -1,0 +1,53 @@
+{
+    "name": "alphasnow/aliyun-oss-flysystem",
+    "description": "Flysystem adapter for the Aliyun storage",
+    "keywords": [
+        "aliyun",
+        "oss",
+        "filesystem",
+        "adapter"
+    ],
+    "homepage": "https://alphasnow.github.io/aliyun-oss-flysystem/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alpha Snow",
+            "email": "wind91@foxmail.com"
+        }
+    ],
+    "require": {
+        "league/flysystem": "^3.0",
+        "aliyuncs/oss-sdk-php": "^2.5"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.4",
+        "phpunit/phpunit": "^9.5",
+        "mockery/mockery": "^1.5",
+        "friendsofphp/php-cs-fixer": "^3.6",
+        "vlucas/phpdotenv": "^5.4",
+        "php-coveralls/php-coveralls": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "AlphaSnow\\Flysystem\\Aliyun\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AlphaSnow\\Flysystem\\Aliyun\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "phpstan": "vendor/bin/phpstan analyse",
+        "check-style": "vendor/bin/php-cs-fixer fix --using-cache=no --diff --config=.php-cs-fixer.php --dry-run --ansi",
+        "fix-style": "vendor/bin/php-cs-fixer fix --using-cache=no --config=.php-cs-fixer.php --ansi",
+        "test": "vendor/bin/phpunit --colors=always --testdox",
+        "coveralls":  "vendor/bin/php-coveralls"
+    },
+    "scripts-descriptions": {
+        "phpstan": "Run static analysis",
+        "check-style": "Run style checks (only dry run - no fixing!).",
+        "fix-style": "Run style checks and fix violations.",
+        "test": "Run all tests."
+    }
+}

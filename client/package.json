@@ -1,0 +1,36 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev --mode dev",
+    "prd": "nuxt dev --mode prd",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/content": "^2.5.2",
+    "@nuxtjs/tailwindcss": "^6.6.0",
+    "nuxt": "^3.0.0"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.0.10",
+    "@pinia/nuxt": "^0.4.7",
+    "@types/prismjs": "^1.26.0",
+    "babel-runtime": "^6.26.0",
+    "clipboard": "^2.0.8",
+    "clipboardy": "^3.0.0",
+    "core-js": "^3.29.1",
+    "element-plus": "^2.2.30",
+    "highlight.js": "^11.7.0",
+    "html2canvas": "^1.4.1",
+    "markdown-it": "^13.0.1",
+    "pinia": "^2.0.33",
+    "pinia-plugin-persist": "^1.0.0",
+    "prismjs": "^1.29.0",
+    "qrcode.vue": "^3.3.3",
+    "vite-plugin-prismjs": "^0.0.8",
+    "vue-markdown": "^2.2.4",
+    "weixin-js-sdk": "^1.6.0"
+  }
+}
